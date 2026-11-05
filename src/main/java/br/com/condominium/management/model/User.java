@@ -14,12 +14,12 @@ import java.util.UUID;
 
 @Entity
 @Table(name = "USERS")
-@JsonPropertyOrder({"id"})
+@JsonPropertyOrder({"id", "name", "email", "address", "profile", "status", "createdAt"})
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Users {
+public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
